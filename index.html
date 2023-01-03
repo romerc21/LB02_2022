@@ -6,6 +6,7 @@
     <title>LoginpageLB02</title>
     <link rel="stylesheet" href="style.css">
     <script src="java.js"></script>
+
 </head>
 
 
@@ -13,9 +14,14 @@
 <form class="box" action="index.html" method="POST">
 
     <h1>Login</h1>
-    <input type="text" name="" placeholder="Enter Username" id="username" >
+
+    <div id="error"></div>
+    <form action="/" method="GET">
+
+    <input type="text" name="" placeholder="Enter Username" id="username" required>
     <input type="password" name="" placeholder="Enter Password" id="password" >
     <input type="submit" name="" value="Login" onclick="validate()">
+    </form>
 
 </form>
 
