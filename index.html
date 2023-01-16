@@ -2,31 +2,202 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>LoginpageLB02</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
 
-</head>
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>Photography</title>
+
+  <link href="css/main.d8e0d294.css" rel="stylesheet"></head>
+
+<body class="">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">über uns</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">gallerie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">öppis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">login</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+<!-- Add your content of header -->
+<main class="content-wrapper">
+  <header class="white-text-container section-container">
+    <div class="text-center">
+      <h1>Modul 288</h1>
+      <p>Mediamatiker ME21d</p>
+    </div>
+  </header>
 
 
-<body>
-<form class="box" action="index.html" method="POST">
 
-    <h1>Login</h1>
+  <!-- social network
 
-    <div id="error"></div>
-    <form action="/" method="GET">
+        <div class="card">
+          <div class="card-block">
+            <h2>Social Network</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <p class="social-buttons"><a href="https://twitter.com/" title=""><span class="social-round-icon fa-icon"><i class="fa fa-twitter"></i></span>Lyn Kolnisko</a></p>
+              </div>
+              <div class="col-md-3">
+                <p class="social-buttons"><a href="https://www.linkedin.com/" title=""><span class="social-round-icon fa-icon"><i class="fa fa-linkedin"></i></span>Carla Romer</a></p>
+              </div>
+          </div>
+        </div>
 
-    <input type="text" name="" placeholder="Enter Username" id="username" required>
-    <input type="password" name="" placeholder="Enter Password" id="password" >
-    <input type="submit" name="" value="Login" onclick="validate()">
-    </form>
-
-</form>
+        -->
 
 
+          <!--login -->
+
+        <div class="card">
+          <div class="card-block">
+            <h2>Login</h2>
+            <p>
+              Felder mit (*) sind obligatorisch auszufüllen.
+            </p>
+
+            <form id="form" class="reveal-content">
+
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Vorname*"/>
+                <small>Error message</small>
+              </div>
+
+              <!-- Nachname -->
+
+              <div class="form-group">
+                <input type="text" id="lastname" class="form-control" placeholder="Nachname*"/>
+                <small>Error message</small>
+              </div>
+
+              <!-- Email -->
+
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Email*"/>
+                <small>Error message</small>
+              </div>
+
+              <!-- Passwort -->
+
+              <div class="form-group">
+                <input name="pw" id="password" type="password" size="10" maxlength="10" placeholder="Passwort*" class="form-control"/>
+                <small>Error message</small>
+              </div>
+
+              <!-- Passwort wiederholen -->
+
+              <div class="form-group">
+                <input name="pw" id="passwordRepeat" type="password" size="10" maxlength="10" placeholder="Passwort wiederholen*" class="form-control"/>
+                <small>Error message</small>
+              </div>
+
+              <div class="form-group">
+                <button id="button" type="button" class=" btn btn-primary" onclick="validateAllInputs()">Login</button>
+              </div>
+            </form>
+
+            <!-- ich bin kein Roboter -->
+           <!-- <div class="sgr-main">
+              <div style="width: 304px; height: 78px;"><div>
+                <iframe title="reCAPTCHA" src="https://www.recaptcha.net/recaptcha/api2/anchor?ar=1&amp;k=6LciibwhAAAAAOxpiJvoMvpu_24xBsyZgN3KpBTr&amp;co=aHR0cHM6Ly93d3cuZG8uZGU6NDQz&amp;hl=de&amp;v=5qcenVbrhOy8zihcc2aHOWD4&amp;size=normal&amp;cb=g5cerl83gfxi" width="304" height="78" role="presentation" name="a-ng0sd2a3mrzx" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+              </div>
+                <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                          style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
+                </textarea>
+              </div>
+              <iframe style="display: none;"></iframe>
+            </div> -->
+
+           <!--- <script src='https://www.google.com/recaptcha/api.js?hl=de'></script>
+            <div class="g-recaptcha" data-sitekey="6LeCof8jAAAAAJLnGkGhShDzyCRCsHvbUAwofhEl"></div> --->
+
+
+            <link rel="stylesheet" type="text/css" href="estilo.css" />
+            <script type="text/javascript" src="script.js"></script>
+            <body onload="Captcha();">
+            <div class="capt">
+              <h2 type="text" id="mainCaptcha"></h2>
+              <p>refresh here</p>
+              <p><input type="button" id="refresh" placeholder="refresh" onclick="Captcha();"/></p>            <input type="text" id="txtInput"/>
+              <input id="Button1" type="button" value="Check" onclick="alert(ValidateCaptcha());"/>
+            </div>
+            </body>
+            <script>
+              function Captcha(){
+                var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+                        'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+                        '0','1','2','3','4','5','6','7','8','9');
+                var i;
+                for (i=0;i<6;i++){
+                  var a = alpha[Math.floor(Math.random() * alpha.length)];
+                  var b = alpha[Math.floor(Math.random() * alpha.length)];
+                  var c = alpha[Math.floor(Math.random() * alpha.length)];
+                  var d = alpha[Math.floor(Math.random() * alpha.length)];
+                  var e = alpha[Math.floor(Math.random() * alpha.length)];
+                  var f = alpha[Math.floor(Math.random() * alpha.length)];
+                  var g = alpha[Math.floor(Math.random() * alpha.length)];
+                }
+                var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+                document.getElementById("mainCaptcha").innerHTML = code
+                document.getElementById("mainCaptcha").value = code
+              }
+              function ValidateCaptcha(){
+                var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+                var string2 =         removeSpaces(document.getElementById('txtInput').value);
+                if (string1 == string2){
+                  return true;
+                }else{
+                  return false;
+                }
+              }
+              function removeSpaces(string){
+                return string.split(' ').join('');
+              }
+            </script>
 </body>
+</html>
 
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Lyn Kolnisko  Carla Romer
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/client/validate-inputs.js"></script>
+<script type="text/javascript" src="js/client/main.bc58148c.js"></script>
+</body>
 
 </html>

@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background-image: url('./assets/img/background.jpeg');
+    background: aliceblue;
+    background-size: cover;
+}
+
+h4 {
+
+    margin: 30px;
+    color: #6c757d;
+}
+.page-section{
+    background-color: white;
+}
+.container{
+
+    background-color: white;
+}
+
+.section-heading {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: #343a40;
+}
+
+.row {
+
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+.div-row {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.row{
+    background-color: white;
+}
+
+a {
+    color: white;
+}
+
+ul {
+    margin: auto;
+    justify-content: space-around;
+}
+
+ul.navbar-nav {
+    height: 90px;
+    width: 100%;
+    background-color: transparent;
+    padding-left: 650px;
+}
+
+nav li {
+    display: inline-block;
+    margin-top: 20px;
+    justify-content: center;
+    float: inside;
+}
+
+a.nav-link a.nav-link active {
+    margin-right: 40px;
+    color: white;
+    font-size: 25px;
+}
+
+a.nav-link active {
+    margin-right: 40px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-brand {
+
+    letter-spacing: 0.1em;
+    word-spacing: 0.25em;
+    margin: 10px;
+    padding: 1px;
+    hover: bold;
+}
+
+div.form-group {
+    margin-top: 30px;
+}
+
+input#refresh {
+    color: #2d672d;
+}
+
+
