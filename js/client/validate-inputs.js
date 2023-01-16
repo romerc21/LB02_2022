@@ -53,7 +53,7 @@ function getFieldName(input) {
 }
 
 
-/*
+
 
 // Validierung Vornamen
 function checkSurname(input, min, max) {
@@ -112,33 +112,14 @@ function matchPassword(input, repeatInput) {
         showError(repeatInput, 'Passwords don\'t match');
     }
 }
-*/
-
-
-if(SurnameValue === '') {
-    setErrorFor(Surname, 'Username cannot be blank');
-    }
-else {
-    setSuccessFor(Surname);
-}
-
-if(emailValue === '') {
-    setErrorFor(email, 'Email cannot be blank');
-}
-else if (!isEmail(emailValue)) {
-    setErrorFor(email, 'Email is not valid');
-}
-
-else {
-    setSuccessFor(email);
-}
 
 
 
+/* festlegung der lenght */
 
 function validateForm(){
-    checkSurname(name, 3, 15);
-    checkLastname(lastname, 2, 50)
+    checkSurname(name, 3, 20);
+    checkLastname(lastname, 2, 25)
     checkEmail(email);
     checkPassword(password, 6, 10)
     matchPassword(password, repeatPassword);
