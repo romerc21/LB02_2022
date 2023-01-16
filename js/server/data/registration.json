@@ -1,12 +1,24 @@
+
+/* user1 */
 [
   {
-    "id": "701c2bb3-3dfd-42ca-a924-9b2273585e3e",
-    "name": "Valentina",
-    "lastname": "Senn",
-    "email": "sennv@bzz.ch",
+    "name": "Lyn",
+    "lastname": "Kolnisko",
+    "email": "kolniskol@bzz.ch",
     "password": "Hallo123",
     "passwordRepeat": "Hallo123",
-    "number": "0762338388",
-    "date": "04/04/17"
   }
 ]
+
+
+/* user 2 */
+[
+  {
+    "name": "Carla",
+    "lastname": "Romer",
+    "email": "romerc@bzz.ch",
+    "password": "HalloWelt",
+    "passwordRepeat": "HalloWelt",
+  }
+]
+
