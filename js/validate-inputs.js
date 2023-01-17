@@ -1,18 +1,16 @@
 // Selektoren für name, lastname, mobile, password
-
-const form = document.getElementById('form');
-const gender = document.getElementById('gender');
+/*vconst form = document.getElementById('form');
+const gender = document.getElementById('gender'); */
 const name = document.getElementById('name');
 const lastname = document.getElementById('lastname');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const repeatPassword = document.getElementById('passwordRepeat');
-const number = document.getElementById('number');
+/* const number = document.getElementById('number');
 const date = document.getElementById('date');
 const message = document.getElementById('message');
 const button = document.getElementById('button');
-//const checkbox = document.getElementById('checkbox');
-
+//const checkbox = document.getElementById('checkbox'); */
 
 // Show input error message
 function showError(input, message) {
@@ -52,9 +50,6 @@ function getFieldName(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
-
-
-
 // Validierung Vornamen
 function checkSurname(input, min, max) {
     const regex = /^[a-z ,.'-]+$/i;
@@ -83,7 +78,8 @@ function checkLastname(input, min, max) {
 
 // Check email is valid
 function checkEmail(input) {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re =
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
         showSuccess(input);
     } else {
@@ -106,40 +102,29 @@ function checkPassword(input, min, max) {
 
 // Validierung Übereinstimmung Passwörter
 function matchPassword(input, repeatInput) {
-    if (password.value === passwordRepeat.value) {
-        showSuccess(input)
+    if (password.value !== '' && password.value === passwordRepeat.value) {
+        showSuccess(repeatInput);
     } else {
-        showError(repeatInput, 'Passwords don\'t match');
+        showError(repeatInput, "Passwords don't match");
     }
 }
 
-
-
 /* festlegung der lenght */
 
-function validateForm(){
+function validateForm() {
     checkSurname(name, 3, 20);
-    checkLastname(lastname, 2, 25)
+    checkLastname(lastname, 2, 25);
     checkEmail(email);
-    checkPassword(password, 6, 10)
+    checkPassword(password, 6, 10);
     matchPassword(password, repeatPassword);
-   // checkCheckbox(checkbox);
+    // checkCheckbox(checkbox);
 }
-
-
 
 function validateAllInputs() {
-    if (!checkRequired([name, lastname, email, password, repeatPassword, number, date])) {
-        alert("Sie haben alle relevanten Felder ausgefüllt. Bitte korrigieren Sie allfällige Fehler.");
+    if (!checkRequired([name, lastname, email, password, repeatPassword])) {
+        alert(
+            'Sie haben alle relevanten Felder ausgefüllt. Bitte korrigieren Sie allfällige Fehler.'
+        );
+    }
     validateForm();
-
 }
-
-
-// Event listeners
-form.addEventListener('submit', function (e) {
-    //https://www.w3schools.com/jsref/event_preventdefault.asp
-    e.preventDefault();
-    //First validate form
-    validateForm();
-})};
